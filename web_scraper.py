@@ -46,6 +46,8 @@ def extract_record(item):
 
 def main():
     search_term = input("Search term: ")
+    amount_pages = int(input("Amount of pages: "))
+    amount_pages = amount_pages * 50 + 1
 
     # Install chrome driver
     driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -57,7 +59,7 @@ def main():
     url = get_url(search_term)
 
     # Iterate through multiple pages on MercadoLibre
-    for page in range(1, 302, 50):
+    for page in range(1, amount_pages, 50):
         # Open web browser
         driver.get(url.format(page))
 
