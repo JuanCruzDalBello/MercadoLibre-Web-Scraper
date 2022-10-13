@@ -10,9 +10,9 @@ In terminal:
 
 Upon execution, the user is asked for a searching term (i.e. bike, old books, 80s retro paintings, etc...) and the amount of pages he wants the script to look into.
 
-    $ Searching term: term
+    $ Searching term: string
 
-    $ Amount of pages: number
+    $ Amount of pages: integer
 
 After givin a searching term and the amount of pages, the script opens a Google Chrome instance and starts searching for the article, through the indicated number of pages.
 
